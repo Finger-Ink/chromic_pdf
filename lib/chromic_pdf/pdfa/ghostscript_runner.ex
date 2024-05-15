@@ -100,7 +100,7 @@ defmodule ChromicPDF.GhostscriptRunner do
         command.args
       ])
 
-    system_cmd!(ghostscript_executable(), args, [])
+    system_cmd!(ghostscript_executable(), args, [stderr_to_stdout: true])
   end
 
   defp maybe_safer_args(command) do
