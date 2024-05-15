@@ -1,3 +1,10 @@
+## Unreleased
+
+### Changed
+
+- Change PDF compatibility level from 1.4 to 1.7. This is well supported, having been around since 2006.
+- Redirect stderr to stdout during execution of ghostscipt.
+
 ## [1.15.2] - 2024-01-04
 
 ### Changed
@@ -49,7 +56,7 @@ config :chromic_pdf, chrome_version: "Google Chrome 120.0.6099.71"
 
 ### Added
 
-- Add support for *named session pools*. These can be used to give persistent session options (`offline`, `disable_scripts`, ...) different values, for example to have one template that is not allowed to execute JavaScript and while others can use JavaScript.
+- Add support for _named session pools_. These can be used to give persistent session options (`offline`, `disable_scripts`, ...) different values, for example to have one template that is not allowed to execute JavaScript and while others can use JavaScript.
 
 ### Changed
 
@@ -297,7 +304,7 @@ config :chromic_pdf, chrome_version: "Google Chrome 120.0.6099.71"
 ### Fixed
 
 - Moved static files required for PDF/A generation to /priv so they are embedded into releases.
-- Moved logo files *out of* /priv so they are not included in releases.
+- Moved logo files _out of_ /priv so they are not included in releases.
 
 ## [0.5.1] - 2020-07-10
 
