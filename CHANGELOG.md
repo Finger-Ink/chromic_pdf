@@ -3,7 +3,6 @@
 ### Changed
 
 - Change PDF compatibility level from 1.4 to 1.7. This is well supported, having been around since 2006.
-- Redirect stderr to stdout during execution of ghostscipt.
 
 ## [1.15.2] - 2024-01-04
 
